@@ -515,13 +515,13 @@ class VimeoStream {
     this.fps,
   });
 
-  int? profile;
+  String? profile;
   String? quality;
   String? id;
   int? fps;
 
   factory VimeoStream.fromJson(Map<String, dynamic> json) => VimeoStream(
-        profile: json["profile"],
+        profile: json["profile"].toString(),
         quality: json["quality"],
         id: json["id"],
         fps: json["fps"],
